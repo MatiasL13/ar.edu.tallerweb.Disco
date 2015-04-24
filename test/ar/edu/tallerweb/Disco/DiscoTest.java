@@ -9,18 +9,18 @@ public class DiscoTest {
 	@Test
 	public void TestPerimetroInterior(){	
 		Disco disco = new Disco(10.0, 20.0);		
-		Assert.assertTrue(disco.perimetroInterno() == 62.83185307179586); 	
+		Assert.assertEquals(disco.perimetroInterno(),  62.83,0.1); 	
 		
 	}
 	@Test
 	public void TestPerimetroExterior(){	
 		Disco disco = new Disco(10.0, 20.0);		
-		Assert.assertTrue(disco.perimetroExterior() == 125.66370614359172);		
+		Assert.assertEquals(disco.perimetroExterior(), 125.66,0.1);		
 	}
 	@Test
 	public void TestArea(){
 		Disco disco = new Disco(10.0, 20.0);
-		Assert.assertTrue(disco.area() == 942.4777960769379);
+		Assert.assertEquals(disco.area(),942.4777, 0.1);
 	}
 	
 	
